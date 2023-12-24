@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Public Sans;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  background: var(--Background-color, #fff);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navBar h3 {
+  color: var(--Main-color, #818eea);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+nav a {
+  color: var(--Text-color, #19272e);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.basket {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .navBar nav {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 320px) {
+  .navBar h3 {
+    font-size: 16px;
+  }
+}
+
+/* HEADER */
+
+/* HERO */
+
+#hero {
+  background: url(./images/HeroImg.png) no-repeat center;
+  background-size: 120%;
+  height: 54vh;
+  margin-top: 32px;
+  height: 520px;
+  margin-bottom: 24px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 520px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero h1 {
+  color: var(--Background-color, #fff);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+}
+
+p {
+  color: var(--Text-color, #19272e);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+@media (max-width: 1200px) {
+  #hero {
+    margin-top: 0;
+    height: 500px;
+  }
+  .hero {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    height: 420px;
+  }
+  .hero {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 320px;
+  }
+  .hero {
+    height: 300px;
+    gap: 8px;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero {
+    height: 300px;
+    background-size: 140%;
+  }
+  .hero {
+    height: 300px;
+  }
+}
+
+@media (max-width: 462px) {
+  #hero {
+    background-size: 174%;
+  }
+
+  .hero {
+    gap: 5px;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .hero p {
+    font-size: 14px;
+    width: 200px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 414px) {
+  #hero {
+    background-size: 195%;
+  }
+}
+
+@media (max-width: 400px) {
+  #hero {
+    background-size: 202%;
+    height: 270px;
+  }
+  .hero {
+    height: 270px;
+  }
+}
+
+@media (max-width: 320px) {
+  #hero {
+    background-size: 226%;
+    height: 250px;
+  }
+  .hero {
+    height: 250px;
+  }
+}
+
+/* HERO */
+
+/* GENRES */
+
+#genres {
+  padding: 112px 0 24px 0;
+}
+
+.genres-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 64px;
+}
+
+.genres-title h1 {
+  color: var(--Text-color, #19272e);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 57.6px;
+}
+
+.genres-title a {
+  color: var(--Main-color, #818eea);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+}
+
+.genres-carts {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  overflow-x: scroll;
+}
+.genres-carts::-webkit-scrollbar {
+  display: none;
+}
+
+.genres-cart {
+  border-radius: 16px;
+  border: 1px solid #e1e1e1;
+  background: #f5f5f5;
+  text-align: center;
+  padding: 24px;
+}
+
+.genres-cart h5 {
+  color: var(--Text-color, #19272e);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.6px;
+  margin-top: 24px;
+}
+
+@media (max-width: 414px) {
+  #genres {
+    padding: 32px 0 16px 0;
+  }
+  .genres-title h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .genres-title a {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+/* GENRES */
+
+/* BOOKS */
+
+#books {
+  padding: 112px 0 24px 0;
+}
+
+.book-cart {
+  width: 200px;
+}
+
+.book-cart h3 {
+  color: var(--Text-color, #19272e);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  margin: 8px 0 4px 0;
+}
+
+.book-cart p {
+  color: var(--Text-color, #19272e);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  opacity: 0.7;
+}
+
+.books-carts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+@media (max-width: 1200px) {
+  .books-carts {
+    gap: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .books-carts {
+    gap: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .books-carts {
+    gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .books-carts {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .books-carts {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 576px) {
+  .books-carts {
+    justify-content: center;
+  }
+}
+
+/* BOOKS */
